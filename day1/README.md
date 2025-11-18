@@ -1,167 +1,125 @@
-🧮 Day 1 — Neo Glassmorphism Calculator
+# 🧮 Day 1 — Neo Glassmorphism Calculator
 
 A futuristic, glass-effect calculator with glowing buttons, smooth animations, advanced keyboard support, and clean JavaScript logic.
 Built as Day 1 of the 30 Days 30 Projects Challenge.
 
-✨ Features
-🎨 Modern UI (Unique Design)
+### ✨ Features
+## 🎨 Modern UI (Unique Design)
 
-Glassmorphism style with blur effects
+- Glassmorphism style with blur effects
 
-Soft neon-glow buttons
+- Soft neon-glow buttons
 
-Gradient background
+- Gradient background
 
-Floating rounded keys
+- Floating rounded keys
 
-Animated header
+- Animated header
 
-🔢 Calculator Functionality
+## 🔢 Calculator Functionality
 
-Addition, subtraction, multiplication, division
+- Addition, subtraction, multiplication, division
 
-Decimal point support
+- Decimal point support
 
-Negative number toggle (+/-)
+- Negative number toggle (+/-)
 
-Backspace/delete
+- Backspace/delete
 
-Prevents invalid decimal inputs
+- Prevents invalid decimal inputs
 
-Prevents division by zero
+- Prevents division by zero
 
-Smooth, continuous calculations
+- Smooth, continuous calculations
 
-⌨️ Keyboard Support
+## ⌨️ Keyboard Support
 
-Numbers (0–9)
+- Numbers (0–9)
 
-Operators (+, –, *, /)
+- Operators (+, –, *, /)
 
-Enter → Equals
+- Enter → Equals
 
-Backspace → Delete last digit
+- Backspace → Delete last digit
 
-Escape → Clear all
+- Escape → Clear all
 
-“.” → Decimal
+- “.” → Decimal
 
-“n” → Toggle negative number
+- “n” → Toggle negative number
 
-📱 Responsive
+## 📱 Responsive
 
-Dynamic layout for mobile screens
+- Dynamic layout for mobile screens
 
-Auto-resizing display text
+- Auto-resizing display text
 
-Touch-friendly buttons
+- Touch-friendly buttons
 
-📸 UI Preview
+## 📸 UI Preview
 
-(Add screenshot here if needed)
+<img width="622" height="832" alt="Screenshot 2025-11-18 124804" src="https://github.com/user-attachments/assets/6533158c-433e-4d5f-b02d-7bfc455437f4" />
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-HTML5 – Markup
+- HTML5 – Markup
 
-CSS3 – Glassmorphism + Grid/Flexbox
+- CSS3 – Glassmorphism + Grid/Flexbox
 
-JavaScript (Vanilla) – Calculator logic + keyboard events
+- JavaScript (Vanilla) – Calculator logic + keyboard events
 
-📂 Project Structure
+## 📂 Project Structure
 day1/
 ├── index.html          # UI Structure
 ├── style.css           # Glassmorphism Styling
 ├── script.js           # Calculator Logic
 └── README.md           # Documentation
 
-🚀 Getting Started
-📦 Clone the Repository
-git clone https://github.com/YOUR-USERNAME/30-days-30-projects.git
+### 🚀 Getting Started
+## 📦 Clone the Repository
+git clone https://github.com/Arjeetkumar/30-day-projects.git
 cd day1
 
-▶️ Run the Web Version
-Option 1 – Simply open:
-index.html
+## ▶️ Run the Web Version
+http://127.0.0.1:5500/day1/
 
-Option 2 – Run a local server:
-python -m http.server 8000
+## 🔮 Future Enhancements
 
+- History panel
 
-Then open:
+- Dark/Light themes
 
-http://localhost:8000
+- Scientific mode
 
-🎯 How to Use
-Web Calculator
+- Sound effects
 
-Click numbers to input
+- Button animations on press
 
-Select operator: +, –, ×, ÷
+- LocalStorage memory
 
-Press "=" or Enter to get result
+## 📚 Learning Outcomes
 
-Use “C” to clear all
+# This project helped practice:
 
-Use "⌫" to delete last digit
+- Event-driven JavaScript
 
-Press “+/-” to toggle negative number
+- State management
 
-Keyboard Shortcuts
-Key	Action
-0–9	Enter numbers
-+ - * /	Operators
-Enter	Equals
-Escape	Clear
-Backspace	Delete
-.	Decimal
-n	Negative toggle
-💡 Code Highlights
-✔ Prevent Double Decimal
-if (num === "." && current.includes(".")) return;
+- UI/UX design
 
-✔ Negative Number Toggle
-current = current.startsWith("-") ? current.slice(1) : "-" + current;
+- Keyboard event handling
 
-✔ Division by Zero Protection
-if (op === "/" && b === 0) {
-    alert("Cannot divide by zero");
-    clearAll();
-}
+- Grid-based layouting
 
-🔮 Future Enhancements
+- Glassmorphism design
 
-History panel
+- Clean function-based logic
 
-Dark/Light themes
+## 👨‍💻 Author
+# Arjeet kumar
+30 Days 30 Projects Challenge
 
-Scientific mode
-
-Sound effects
-
-Button animations on press
-
-LocalStorage memory
-
-📚 Learning Outcomes
-
-This project helped practice:
-
-Event-driven JavaScript
-
-State management
-
-UI/UX design
-
-Keyboard event handling
-
-Grid-based layouting
-
-Glassmorphism design
-
-Clean function-based logic
-
-👨‍💻 Author
+Day 1 of 30 | Built with 💖 and ☕
 
 Arjeet Kumar
 30 Days 30 Projects Challenge
