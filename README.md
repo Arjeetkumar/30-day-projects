@@ -1,186 +1,71 @@
-# 🧮 Day 1 — Neo Glassmorphism Calculator
-
-A futuristic, glass-effect calculator with glowing buttons, smooth animations, advanced keyboard support, and clean JavaScript logic.
-Built as Day 1 of the 30 Days 30 Projects Challenge.
-
-### ✨ Features
-## 🎨 Modern UI (Unique Design)
-
-- Glassmorphism style with blur effects
-
-- Soft neon-glow buttons
-
-- Gradient background
-
-- Floating rounded keys
-
-- Animated header
-
-## 🔢 Calculator Functionality
-
-- Addition, subtraction, multiplication, division
-
-- Decimal point support
-
-- Negative number toggle (+/-)
-
-- Backspace/delete
-
-- Prevents invalid decimal inputs
-
-- Prevents division by zero
-
-- Smooth, continuous calculations
-
-## ⌨️ Keyboard Support
-
-- Numbers (0–9)
-
-- Operators (+, –, *, /)
-
-- Enter → Equals
-
-- Backspace → Delete last digit
-
-- Escape → Clear all
-
-- “.” → Decimal
-
-- “n” → Toggle negative number
-
-## 📱 Responsive
-
-- Dynamic layout for mobile screens
-
-- Auto-resizing display text
-
-- Touch-friendly buttons
-
-## 📸 UI Preview
-
-<img width="622" height="832" alt="Screenshot 2025-11-18 124804" src="https://github.com/user-attachments/assets/6533158c-433e-4d5f-b02d-7bfc455437f4" />
-
-## 🛠️ Tech Stack
-
-- HTML5 – Markup
-
-- CSS3 – Glassmorphism + Grid/Flexbox
-
-- JavaScript (Vanilla) – Calculator logic + keyboard events
-
-## 📂 Project Structure
-day1/
-├── index.html          # UI Structure
-├── style.css           # Glassmorphism Styling
-├── script.js           # Calculator Logic
-└── README.md           # Documentation
-
-### 🚀 Getting Started
-## 📦 Clone the Repository
-git clone https://github.com/Arjeetkumar/30-day-projects.git
-cd day1
-
-## ▶️ Run the Web Version
-http://127.0.0.1:5500/day1/
-
-## 🔮 Future Enhancements
-
-- History panel
-
-- Dark/Light themes
-
-- Scientific mode
-
-- Sound effects
-
-- Button animations on press
-
-- LocalStorage memory
-
-## 📚 Learning Outcomes
-
-# This project helped practice:
-
-- Event-driven JavaScript
-
-- State management
-
-- UI/UX design
-
-- Keyboard event handling
-
-- Grid-based layouting
-
-- Glassmorphism design
-
-- Clean function-based logic
-
-## 👨‍💻 Author
-## Arjeet kumar
-30 Days 30 Projects Challenge
-
-Day 1 of 30 | Built with 💖 and ☕
-
-Arjeet Kumar
-30 Days 30 Projects Challenge
-
-
-
-
-# 💧Day2 - Hydration Timer App
+💧 Hydration Timer App
 
 A beautifully designed hydration reminder app with a clean UI, smooth visuals, audio alerts, progress tracking, and fully customizable timer settings.
 Built as Day 2 of the 30 Days 30 Projects challenge.
 
-## 🖼️ Hydration Timer Preview
+🖼️ Hydration Timer Preview
 
-<img width="1033" height="1003" alt="Screenshot 2025-11-19 130044" src="https://github.com/user-attachments/assets/d8a6191e-62ba-463f-ae01-11ad174d3178" />
+(Add your app screenshot here)
+Example:
+<img src="images/fancy_full3.png" width="400">
 
-### ✨ Features
-## 🎨 Design
+✨ Features
+🎨 Design
 
-- Clean Dark-Themed UI: Modern layout with glass-like elements
+Clean Dark-Themed UI: Modern layout with glass-like elements
 
-- Water-Level Animations: 7-stage water glass levels
+Water-Level Animations: 7-stage water glass levels
 
-- Responsive Interface: Scales smoothly across screens
+Responsive Interface: Scales smoothly across screens
 
-- Highlighted Buttons & Cards: Rounded, elegant visuals
+Highlighted Buttons & Cards: Rounded, elegant visuals
 
-## ⏱️ Timer & Functionality
+⏱️ Timer & Functionality
 
-- Fully Custom Timer: Set your drinking interval in minutes
+Fully Custom Timer: Set your drinking interval in minutes
 
-- Daily Water Goal: Choose how many glasses you aim to drink per day
+Daily Water Goal: Choose how many glasses you aim to drink per day
 
-- Persistent Tracking: Saves count & goal automatically
+Persistent Tracking: Saves count & goal automatically
 
-- Progress Bar: See daily progress visually
+Progress Bar: See daily progress visually
 
-- Manual Logging: Add glasses manually when needed
+Manual Logging: Add glasses manually when needed
 
-- Timer Auto-Reset: After every cycle
+Timer Auto-Reset: After every cycle
 
-## 🔔 Alarm System
+🔔 Alarm System
 
-- Looping Alarm: Plays until user clicks OK
+Looping Alarm: Plays until user clicks OK
 
--  MP3 & WAV Support: Uses any alarm file you provide
+MP3 & WAV Support: Uses any alarm file you provide
 
-- pygame Integration: Clear looping audio
+pygame Integration: Clear looping audio
 
-- Graceful Fallback: App functions even without sound
+Graceful Fallback: App functions even without sound
 
-## ⌨️ Keyboard Support
+⌨️ Keyboard Support
 
-- Space → Start/Pause
+Space → Start/Pause
 
-- Escape → Reset
+Escape → Reset
 
-- D → Log a glass instantly
+D → Log a glass instantly
 
+🚀 Getting Started
+Prerequisites
 
-git clone https://github.com/Arjeetkumar/30Days-30Projects.git
+Python 3.x installed
+
+Pillow → pip install pillow
+
+Optional (for alarm): pygame → pip install pygame
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/YourUsername/30Days-30Projects.git
 cd day2
 
 
@@ -188,7 +73,7 @@ Run the app:
 
 python timer.py
 
-## 📂 Project Structure
+📂 Project Structure
 day2/
 ├── timer.py              # Main Hydration Timer App
 ├── hydration.json        # Auto-generated saved state
@@ -204,109 +89,150 @@ day2/
     ├── full5.png
     └── full6.png
 
-## 🎯 How to Use
-- Hydration Timer
 
-- Set your timer duration (in minutes)
+If no images are present, the app generates placeholders automatically.
 
-- Click Apply
+🎯 How to Use
+Hydration Timer
 
-- Press START
+Set your timer duration (in minutes)
 
-- When the timer ends:
+Click Apply
 
-- Alarm will loop
+Press START
 
-- Popup reminds you to drink
+When the timer ends:
 
-- Click OK → timer resets
+Alarm will loop
 
-- Daily Goal Tracking
+Popup reminds you to drink
 
-- Set your daily water intake goal
+Click OK → timer resets
 
-- App saves it to hydration.json
+Daily Goal Tracking
 
-- Progress bar updates instantly
+Set your daily water intake goal
 
-- Manual Logging
+App saves it to hydration.json
 
-- Click I DRANK (LOG)
+Progress bar updates instantly
 
-- Or press D to instantly add
+Manual Logging
 
-## 🎨 Styling Details
+Click I DRANK (LOG)
 
-- Color Palette
+Or press D to instantly add
 
-- Navy Background: #0d1b2a
+💻 Code Highlights
+Dynamic Timer Setting
+mins = int(self.minutes_var.get())
+self.total_time = mins * 60
+self.remaining_time = self.total_time
 
-- Aqua Accent: #4dd0e1
+Daily Progress Visualization
+percent = int((self.water_count / max(1, self.daily_goal)) * 100)
+self.progress['value'] = min(100, percent)
 
-- Light Gray: #90a4ae
+Auto-Saving State
+with open("hydration.json", "w") as f:
+    json.dump({"count": self.water_count, "goal": self.daily_goal}, f)
 
-- Deep Card Blue: #1a2f45
+Continuous Alarm Loop
+pygame.mixer.music.load(self.alarm_path)
+pygame.mixer.music.play(-1)
 
-- Warning Orange: #ffa726
+🎨 Styling Details
 
-- Purple Log Button: #7c4dff
+Color Palette
 
-- Crisp typography
+Navy Background: #0d1b2a
 
-## 🛠️ Technologies Used
+Aqua Accent: #4dd0e1
 
-- Python Tkinter — GUI
+Light Gray: #90a4ae
 
-- Pillow (PIL) — images
+Deep Card Blue: #1a2f45
 
-- pygame — audio
+Warning Orange: #ffa726
 
-- JSON — storing user data
+Purple Log Button: #7c4dff
 
-## 🔮 Future Enhancements
+Visuals
 
-- Daily reset at midnight
+Water glass animation
 
-- Sound volume slider
+Gradient progress UI
 
-- Snooze reminder feature
+Rounded buttons
 
-- Water intake history chart
+Crisp typography
 
-- Multiple sound themes
+🛠️ Technologies Used
 
-- Mobile/desktop packaged version
+Python Tkinter — GUI
 
-## 🐛 Known Issues
+Pillow (PIL) — images
 
-- Alarm needs pygame for best experience
+pygame — audio
 
-- Without images, placeholders appear
+JSON — storing user data
 
-- Some OSes handle audio differently
+🔮 Future Enhancements
 
-## 📚 Learning Outcomes
+Daily reset at midnight
+
+Sound volume slider
+
+Snooze reminder feature
+
+Water intake history chart
+
+Multiple sound themes
+
+Mobile/desktop packaged version
+
+🐛 Known Issues
+
+Alarm needs pygame for best experience
+
+Without images, placeholders appear
+
+Some OSes handle audio differently
+
+📚 Learning Outcomes
 
 This project helped practice:
 
-- Event-driven Tkinter programming
+Event-driven Tkinter programming
 
-- Image loading & UI state management
+Image loading & UI state management
 
-- Timer events with after()
+Timer events with after()
 
-- Data persistence using JSON
+Data persistence using JSON
 
-- Playing audio reliably
+Playing audio reliably
 
-- Designing a health-reminder tool
+Designing a health-reminder tool
 
-- Creating user-friendly UI layouts
+Creating user-friendly UI layouts
 
-## 👨‍💻 Author
+👨‍💻 Author
 
-## Arjeet Kumar
-GitHub: https://github.com/Arjeetkumar/30-day-projects
+Arjeet Kumar
+GitHub: Add your GitHub link here
 Project: 30 Days 30 Projects
+
+📄 License
+
+This project is a part of the 30 Days 30 Projects challenge and is fully open source.
+
+🙏 Acknowledgments
+
+Inspired by popular hydration reminder apps
+
+Visual enhancements customized for this challenge
+
+Sound, UI layout & design refined for simplicity and clarity
 
 Day 2 of 30 | Built with 💧 discipline and ⚡ consistency by Arjeet Kumar
