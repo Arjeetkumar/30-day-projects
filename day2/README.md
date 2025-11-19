@@ -1,79 +1,61 @@
-💧 Hydration Timer App
+## 💧Day2- Hydration Timer App
 
 A beautifully designed hydration reminder app with a clean UI, smooth visuals, audio alerts, progress tracking, and fully customizable timer settings.
 Built as Day 2 of the 30 Days 30 Projects challenge.
 
-🖼️ Hydration Timer Preview
+## 🖼️ Hydration Timer Preview
 
-(Add your app screenshot here)
-Example:
-<img src="images/fancy_full3.png" width="400">
+<img width="1033" height="1003" alt="Screenshot 2025-11-19 130044" src="https://github.com/user-attachments/assets/fad0511c-c3df-4ad8-a663-12710b1076b1" />
 
-✨ Features
-🎨 Design
+### ✨ Features
+## 🎨 Design
 
-Clean Dark-Themed UI: Modern layout with glass-like elements
+- Clean Dark-Themed UI: Modern layout with glass-like elements
 
-Water-Level Animations: 7-stage water glass levels
+- Water-Level Animations: 7-stage water glass levels
 
-Responsive Interface: Scales smoothly across screens
+- Responsive Interface: Scales smoothly across screens
 
-Highlighted Buttons & Cards: Rounded, elegant visuals
+- Highlighted Buttons & Cards: Rounded, elegant visuals
 
-⏱️ Timer & Functionality
+## ⏱️ Timer & Functionality
 
-Fully Custom Timer: Set your drinking interval in minutes
+- Fully Custom Timer: Set your drinking interval in minutes
 
-Daily Water Goal: Choose how many glasses you aim to drink per day
+- Daily Water Goal: Choose how many glasses you aim to drink per day
 
-Persistent Tracking: Saves count & goal automatically
+- Persistent Tracking: Saves count & goal automatically
 
-Progress Bar: See daily progress visually
+- Progress Bar: See daily progress visually
 
-Manual Logging: Add glasses manually when needed
+- Manual Logging: Add glasses manually when needed
 
-Timer Auto-Reset: After every cycle
+- Timer Auto-Reset: After every cycle
 
-🔔 Alarm System
+## 🔔 Alarm System
 
-Looping Alarm: Plays until user clicks OK
+- Looping Alarm: Plays until user clicks OK
 
-MP3 & WAV Support: Uses any alarm file you provide
+- MP3 & WAV Support: Uses any alarm file you provide
 
-pygame Integration: Clear looping audio
+- pygame Integration: Clear looping audio
 
-Graceful Fallback: App functions even without sound
+- Graceful Fallback: App functions even without sound
 
-⌨️ Keyboard Support
+- ⌨️ Keyboard Support
 
-Space → Start/Pause
+- Space → Start/Pause
 
-Escape → Reset
+- Escape → Reset
 
-D → Log a glass instantly
-
-🚀 Getting Started
-Prerequisites
-
-Python 3.x installed
-
-Pillow → pip install pillow
-
-Optional (for alarm): pygame → pip install pygame
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/YourUsername/30Days-30Projects.git
-cd day2
+- D → Log a glass instantly
 
 
-Run the app:
+## Clone the repository:
 
-python timer.py
+git clone https://github.com/Arjeetkumar/30Days-30Projects.git
 
-📂 Project Structure
+## 📂 Project Structure
 day2/
 ├── timer.py              # Main Hydration Timer App
 ├── hydration.json        # Auto-generated saved state
@@ -87,152 +69,110 @@ day2/
     ├── full3.png
     ├── full4.png
     ├── full5.png
-    └── full6.png
+    └── full6.png.
 
+## 🎯 How to Use
+- Hydration Timer
 
-If no images are present, the app generates placeholders automatically.
+- Set your timer duration (in minutes)
 
-🎯 How to Use
-Hydration Timer
+- Click Apply
 
-Set your timer duration (in minutes)
+- Press START
 
-Click Apply
+- When the timer ends:
 
-Press START
+- Alarm will loop
 
-When the timer ends:
+- Popup reminds you to drink
 
-Alarm will loop
+- Click OK → timer resets
 
-Popup reminds you to drink
+- Daily Goal Tracking
 
-Click OK → timer resets
+- Set your daily water intake goal
 
-Daily Goal Tracking
+- App saves it to hydration.json
 
-Set your daily water intake goal
+- Progress bar updates instantly
 
-App saves it to hydration.json
+- Manual Logging
 
-Progress bar updates instantly
+- Click I DRANK (LOG)
 
-Manual Logging
+- Or press D to instantly add
 
-Click I DRANK (LOG)
+## 🎨 Styling Details
 
-Or press D to instantly add
+### Color Palette
 
-💻 Code Highlights
-Dynamic Timer Setting
-mins = int(self.minutes_var.get())
-self.total_time = mins * 60
-self.remaining_time = self.total_time
+- Navy Background: #0d1b2a
 
-Daily Progress Visualization
-percent = int((self.water_count / max(1, self.daily_goal)) * 100)
-self.progress['value'] = min(100, percent)
+- Aqua Accent: #4dd0e1
 
-Auto-Saving State
-with open("hydration.json", "w") as f:
-    json.dump({"count": self.water_count, "goal": self.daily_goal}, f)
+- Light Gray: #90a4ae
 
-Continuous Alarm Loop
-pygame.mixer.music.load(self.alarm_path)
-pygame.mixer.music.play(-1)
+- Deep Card Blue: #1a2f45
 
-🎨 Styling Details
+- Warning Orange: #ffa726
 
-Color Palette
+- Purple Log Button: #7c4dff
 
-Navy Background: #0d1b2a
+## 🛠️ Technologies Used
 
-Aqua Accent: #4dd0e1
+- Python Tkinter — GUI
 
-Light Gray: #90a4ae
+- Pillow (PIL) — images
 
-Deep Card Blue: #1a2f45
+- pygame — audio
 
-Warning Orange: #ffa726
+- JSON — storing user data
 
-Purple Log Button: #7c4dff
+## 🔮 Future Enhancements
 
-Visuals
+- Daily reset at midnight
 
-Water glass animation
+- Sound volume slider
 
-Gradient progress UI
+- Snooze reminder feature
 
-Rounded buttons
+- Water intake history chart
 
-Crisp typography
+- Multiple sound themes
 
-🛠️ Technologies Used
+- Mobile/desktop packaged version
 
-Python Tkinter — GUI
+## 🐛 Known Issues
 
-Pillow (PIL) — images
+- Alarm needs pygame for best experience
 
-pygame — audio
+- Without images, placeholders appear
 
-JSON — storing user data
+- Some OSes handle audio differently
 
-🔮 Future Enhancements
+## 📚 Learning Outcomes
 
-Daily reset at midnight
+### This project helped practice:
 
-Sound volume slider
+- Event-driven Tkinter programming
 
-Snooze reminder feature
+- Image loading & UI state management
 
-Water intake history chart
+- Timer events with after()
 
-Multiple sound themes
+- Data persistence using JSON
 
-Mobile/desktop packaged version
+- Playing audio reliably
 
-🐛 Known Issues
+- Designing a health-reminder tool
 
-Alarm needs pygame for best experience
+- Creating user-friendly UI layouts
 
-Without images, placeholders appear
+## 👨‍💻 Author
 
-Some OSes handle audio differently
-
-📚 Learning Outcomes
-
-This project helped practice:
-
-Event-driven Tkinter programming
-
-Image loading & UI state management
-
-Timer events with after()
-
-Data persistence using JSON
-
-Playing audio reliably
-
-Designing a health-reminder tool
-
-Creating user-friendly UI layouts
-
-👨‍💻 Author
-
-Arjeet Kumar
-GitHub: Add your GitHub link here
-Project: 30 Days 30 Projects
-
-📄 License
-
-This project is a part of the 30 Days 30 Projects challenge and is fully open source.
-
-🙏 Acknowledgments
-
-Inspired by popular hydration reminder apps
-
-Visual enhancements customized for this challenge
-
-Sound, UI layout & design refined for simplicity and clarity
+## Arjeet Kumar
+GitHub: https://github.com/Arjeetkumar/30-day-projects/edit/main/day2
 
 Day 2 of 30 | Built with 💧 discipline and ⚡ consistency by Arjeet Kumar
+Project: 30 Days 30 Projects
+
