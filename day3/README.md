@@ -3,6 +3,9 @@
 A clean, modern Pomodoro Timer designed to help you stay productive, focused, and consistent.
 Built as Day 3 of the 30 Days 30 Projects challenge.
 
+## Pomodoro Timer Preview
+<img width="1203" height="831" alt="Screenshot 2025-11-20 094519" src="https://github.com/user-attachments/assets/4539639b-64ce-4198-ae42-6754d00838c1" />
+
 ### ✨ Features
 ## 🎨 Design
 
@@ -139,4 +142,5 @@ day3/
 GitHub: @Arjeetkumar
 
 Project: 30 Days 30 Projects
+
 
