@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pomodoro Timer By Arjeet </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous"/>
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>🍅 Pomodoro Timer</h1>
+      <div class="header-right">
+        <div id="clock" class="clock"></div>
+        <button id="rainToggle" class="icon-btn" title="Toggle ambient rain" aria-label="Toggle ambient rain">
+          <i class="fa-solid fa-cloud-rain"></i>
+        </button>
+        <button id="settingsBtn" class="icon-btn" title="Settings" aria-label="Settings">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="timer-card">
+      <div class="ring-wrap">
+        <svg class="progress-ring" width="220" height="220">
+          <circle class="progress-ring__bg" stroke="#eee" stroke-width="12" fill="transparent" r="96" cx="110" cy="110"/>
+          <circle class="progress-ring__circle" stroke="#4dd0e1" stroke-width="12" fill="transparent" r="96" cx="110" cy="110" stroke-linecap="round"/>
+        </svg>
+        <div class="timer-display">
+          <div id="modeLabel" class="mode-label">Work</div>
+          <div id="timerText" class="time">25:00</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="btn primary">Start</button>
+        <button id="pauseBtn" class="btn" disabled>Pause</button>
+        <button id="resetBtn" class="btn warn">Reset</button>
+        <button id="skipBtn" class="btn accent">Skip</button>
+      </div>
+
+      <div class="info-row">
+        <div class="info-card">
+          <div class="info-title">Pomodoros today</div>
+          <div id="count" class="info-value">0</div>
+        </div>
+        <div class="info-card">
+          <div class="info-title">Progress</div>
+          <div id="progressText" class="info-value">0%</div>
+        </div>
+        <div class="info-card">
+          <div class="info-title">Status</div>
+          <div id="status" class="info-value">Ready</div>
+        </div>
+      </div>
+
+      <div class="footer-hint">
+        Shortcuts: <strong>Space</strong> Start/Pause • <strong>R</strong> Reset • <strong>S</strong> Skip • <strong>L</strong> Log
+      </div>
+    </section>
+
+    <!-- Settings modal -->
+    <div id="settingsModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+      <div class="modal-content">
+        <h2 id="settingsTitle">Settings</h2>
+
+        <label>Work (minutes)
+          <input id="workInput" type="number" min="1" max="120" value="25">
+        </label>
+
+        <label>Short Break (minutes)
+          <input id="shortInput" type="number" min="1" max="60" value="5">
+        </label>
+
+        <label>Long Break (minutes)
+          <input id="longInput" type="number" min="1" max="120" value="15">
+        </label>
+
+        <label>Cycles before long break
+          <input id="cyclesInput" type="number" min="2" max="8" value="4">
+        </label>
+
+        <label>Enable voice reminders
+          <input id="voiceToggle" type="checkbox">
+        </label>
+
+        <div class="modal-actions">
+          <button id="saveSettings" class="btn primary">Save</button>
+          <button id="closeSettings" class="btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden audio elements (optional files) -->
+    <audio id="alarmAudio" src="alarm.mp3" preload="auto"></audio>
+    <audio id="rainAudio" src="light_rain.wav" loop preload="auto"></audio>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
