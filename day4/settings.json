@@ -1,0 +1,10 @@
+{
+  "interval": 10,
+  "shuffle": true,
+  "last_index": 4,
+  "scale_mode": "fit",
+  "profile": {
+    "points": 16,
+    "level": 1
+  }
+}
