@@ -1,67 +1,65 @@
-🌸 Kawaii To-Do App
+# 🌸 Simple To-Do App
 
 A pastel-themed, gamified To-Do application with cute animations, XP system, and a mobile-style UI — built as Day 5 of the 30 Days 30 Projects challenge by Arjeet.
 
 ✨ Preview
+<img width="986" height="1011" alt="Screenshot 2025-11-22 150222" src="https://github.com/user-attachments/assets/37d2f2d8-fedf-44fb-8dfd-ca38ea552ad8" />
 
 A beautifully designed productivity app featuring a pink kawaii interface, butterflies, tulips, animations, and smooth task management.
 
-🎀 Features
-🎨 Design
+### 🎀 Features
+## 🎨 Design
 
-Kawaii Pastel UI: Soft pink background and bubble-style elements
+- Kawaii Pastel UI: Soft pink background and bubble-style elements
 
-Cute Icons: Tulip 🌷 & Butterfly 🦋 decorations
+- Cute Icons: Tulip 🌷 & Butterfly 🦋 decorations
 
-Mobile Layout: 450×800 design for a compact look
+- Mobile Layout: 450×800 design for a compact look
 
-Simple & Clean Interface: Easy to use
+- Simple & Clean Interface: Easy to use
 
-Comic Sans Bubble Font: Soft, rounded, aesthetic
+- Comic Sans Bubble Font: Soft, rounded, aesthetic
 
-📝 Task Management
+## 📝 Task Management
 
-Add tasks
+- Add tasks
 
-Edit tasks
+- Edit tasks
 
-Delete tasks
+- Delete tasks
 
-Mark tasks as complete
+- Mark tasks as complete
 
-Clear completed tasks
+- Clear completed tasks
 
-Auto-save to JSON
+- Auto-save to JSON
 
-Smooth task re-rendering
+- Smooth task re-rendering
 
-⭐ Gamified Progress System
+## ⭐ Gamified Progress System
 
-Earn XP for completing tasks
+- Earn XP for completing tasks
 
-Earn points (same as XP)
+- Earn points (same as XP)
 
-Level up every 100 XP
+- Level up every 100 XP
 
-Visual XP progress bar
+- Visual XP progress bar
 
-Level popup effect
+- Level popup effect
 
-💗 Cute Animations
+## 💗 Cute Animations
 
-Floating heart pop animation whenever a task is completed
+- Floating heart pop animation whenever a task is completed
 
-💾 Auto Saving
+## 💾 Auto Saving
 
 Your data is stored locally:
 
-tasks.json
-settings.json
+- tasks.json
+- settings.json
 
-
-No data is lost when app is closed.
-
-📁 Project Structure
+## 📁 Project Structure
 day5/
 │── to_do.py              # Main application
 │── tasks.json            # Saved tasks
@@ -69,115 +67,73 @@ day5/
 └── images/
      ├── tulip.png        # Header icon
      └── butterfly.png    # Decoration icon
+     
+## 🎨 UI Elements
 
-🚀 Getting Started
-✔ Prerequisites
+- 🌷 Tulip Icon	Header decoration
+- 🦋 Butterfly Icon	Decorative element
+- 💗 Heart Pop	Floating animation on completion
+- ⭐ XP Bar	Shows your progress toward next level
+- 🎀 Pink Palette	Soft kawaii aesthetic
+- 📱 Mobile Layout	450×800 window
+  
+## 🛠 Technologies Used
 
-Install Pillow:
+- Python 3
 
-pip install pillow
+- Tkinter (GUI)
 
-✔ Run the App
+- Pillow (Image processing)
 
-Navigate to your project folder:
+- JSON (Local Storage)
 
-cd day5
-python to_do.py
+## 🔮 Future Enhancements
 
+- Add themes (Purple / Blue / Dark Mode)
 
-The app will open in a pink mobile-style window.
+- Add categories (Work / Study / Personal)
 
-🎮 How to Use
-➕ Add a Task
+- Add search bar
 
-Type in the entry box
+- Add task reminders
 
-Click + button
+- Add cloud sync
 
-✏️ Edit a Task
+- Add streak system
 
-Click ✎ icon
+- Add daily motivational quotes
 
-✔ Complete a Task
+- Add custom icons
 
-Click ✔ icon
+## 🐛 Known Issues
 
-You earn XP + Points
+- Old tasks.json may cause errors if it uses old keys
 
-A cute 💗 heart pops!
+- Large numbers of tasks may extend the scroll area (update planned)
 
-🗑 Delete a Task
-
-Click 🗑 icon
-
-🧹 Clear Completed
-
-Automatically handled when needed.
-
-🎨 UI Elements
-Element	Description
-🌷 Tulip Icon	Header decoration
-🦋 Butterfly Icon	Decorative element
-💗 Heart Pop	Floating animation on completion
-⭐ XP Bar	Shows your progress toward next level
-🎀 Pink Palette	Soft kawaii aesthetic
-📱 Mobile Layout	450×800 window
-🛠 Technologies Used
-
-Python 3
-
-Tkinter (GUI)
-
-Pillow (Image processing)
-
-JSON (Local Storage)
-
-🔮 Future Enhancements
-
-Add themes (Purple / Blue / Dark Mode)
-
-Add categories (Work / Study / Personal)
-
-Add search bar
-
-Add task reminders
-
-Add cloud sync
-
-Add streak system
-
-Add daily motivational quotes
-
-Add custom icons
-
-🐛 Known Issues
-
-Old tasks.json may cause errors if it uses old keys
-
-Large numbers of tasks may extend the scroll area (update planned)
-
-📝 Learning Outcomes
+## 📝 Learning Outcomes
 
 This project helped practice:
 
-Tkinter GUI development
+- Tkinter GUI development
 
-Working with JSON storage
+- Working with JSON storage
 
-Event handling
+- Event handling
 
-Basic animations
+- Basic animations
 
-Clean UI layout design
+- Clean UI layout design
 
-XP/Progress systems
+- XP/Progress systems
 
-Image loading with Pillow
+- Image loading with Pillow
 
-Mobile-style GUI architecture
+- Mobile-style GUI architecture
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Arjeet
+### Arjeet
 Passionate about Python, UI design & building creative apps.
+
 Day 5 of the 30 Projects in 30 Days Challenge ✨
