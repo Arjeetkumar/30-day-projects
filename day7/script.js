@@ -1,5 +1,5 @@
 // API Key (Hardcoded for simplicity; in production, use secure storage)
-const API_KEY = "sk-KCQQuTCIHyqsBRHfvXHNxw0DzYKnukm32FQmwtUvWf2F7K91";
+const API_KEY = "YOUR API_KEY";
 
 // DOM Elements
 const uploadInput = document.getElementById('uploadInput');
@@ -180,4 +180,5 @@ function downloadImage() {
     link.download = `facetoon-${currentFilterName || 'edit'}.png`;
     link.href = resultImage.src;
     link.click();
+
 }
