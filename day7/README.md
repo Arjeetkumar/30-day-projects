@@ -1,81 +1,64 @@
-🎨 FaceArt AI
+# 🎨 FaceArt AI
 
 A modern AI-powered face transformation tool with stunning visuals, seamless UI, and smart SDXL image-to-image generation. Built as Day 7 of the 30 Days 30 Projects Challenge.
 
 FaceArt AI allows users to upload any portrait photo and transform it into Pixar, Cyberpunk, Anime, Sketch, Claymation, Zombie, or any custom art style using Stable Diffusion XL.
 
-✨ Features
-🎨 Design
+### ✨ Features
+## 🎨 Design
 
-Modern, glass-blur sidebar UI
+- Modern, glass-blur sidebar UI
 
-Neon accent colors with premium aesthetics
+- Neon accent colors with premium aesthetics
 
-Fully responsive and smooth animations
+- Fully responsive and smooth animations
 
-Clean preview area with compare mode
+- Clean preview area with compare mode
 
-Loading overlay with “AI Dreaming” effect
+- Loading overlay with “AI Dreaming” effect
 
-🤖 AI Power
+## 🤖 AI Power
 
-Image-to-Image transformation using SDXL (Stable Diffusion XL)
+- Image-to-Image transformation using SDXL (Stable Diffusion XL)
 
-Smart auto-resizing to valid SDXL dimensions
+- Smart auto-resizing to valid SDXL dimensions
 
-Adjustable creativity slider (10%–90%)
+- Adjustable creativity slider (10%–90%)
 
-Built-in style filters:
+- Built-in style filters:
 
-Pixar
+- Pixar
 
-Cyberpunk
+- Cyberpunk
 
-Anime
+- Anime
 
-Sketch
+- Sketch
 
-Zombie
+- Zombie
 
-Claymation
+- Claymation
 
-Optional custom prompt for full creativity
+- Optional custom prompt for full creativity
 
-Instant result preview
+- Instant result preview
 
-Hold-to-compare button to quickly toggle original vs AI image
+- Hold-to-compare button to quickly toggle original vs AI image
 
-📸 Upload & Output
+## 📸 Upload & Output
+<img width="1902" height="919" alt="Screenshot 2025-11-24 172353" src="https://github.com/user-attachments/assets/c19d6004-5e25-4115-a9ca-7e1c1c8c9e00" />
 
-Upload any JPG/PNG photo
+- Upload any JPG/PNG photo
 
-Automatically displayed in preview
+- Automatically displayed in preview
 
-AI output generated in PNG
+- AI output generated in PNG
 
-One-click Download Result button
+- One-click Download Result button
 
-🚀 Getting Started
-Prerequisites
+## git clone https://github.com/Arjeetkumar/30-day-projects/edit/main/day7
 
-Modern web browser (Chrome, Edge, Firefox, Safari)
-
-Stability AI API key (SDXL Image-to-Image)
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/FaceArt-AI.git
-cd FaceArt-AI
-
-
-Run the project (no server needed):
-Simply open:
-
-index.html
-
-📂 Project Structure
+## 📂 Project Structure
 FaceArt-AI/
 ├── index.html          # Main UI structure
 ├── style.css           # Neon UI, glass sidebar, transitions
@@ -83,133 +66,67 @@ FaceArt-AI/
 ├── assets/             # Optional: icons, backgrounds
 └── README.md           # Documentation
 
-🎯 How to Use
-1. Upload Photo
+## 🎨 Styling Details
+### Color Palette
+- Accent	#ff0055 (Neon Pink)
+- Accent Gradient	Pink → Gold
+- Background	#0f0c29 dark gradient
+- Sidebar	Semi-transparent glass blur
+- UI Components:
 
-Click 📸 Choose Photo
+- Glassy neon buttons
 
-Select an image (preferably a face)
+- Dynamic shadows and glow
 
-2. Select a Style
+- Smooth hover effects
 
-Choose one filter from:
+- Blurred glass sidebar
 
-Pixar • Anime • Cyberpunk • Sketch • Zombie • Clay
+## 🔮 Future Enhancements
 
-3. Adjust AI Strength
+- Background remover + custom scene
 
-10–30% → subtle edit
+- Change-gender, old-age, child-face filters
 
-40–60% → balanced transformation
+- Live camera mode
 
-70–90% → dramatic restyle
+- HD upscale option
 
-4. Optional Custom Prompt
+- Color-grading presets
 
-Add extra instructions like:
+- Face anonymization AI
 
-neon lighting, cinematic shading, 4k ultra detail
+- AI animations / video output (future)
 
-5. Generate
+## 🐛 Known Issues
 
-Click ✨ Generate AI Art
+- Very large images take longer to resize
 
-6. Preview
+- Some styles may alter facial identity too much at high strength
 
-Output appears instantly
+- API key must be manually added in script.js (insecure for production)
 
-Press & hold Hold to Compare to toggle original → AI result
-
-7. Download
-
-Click ⬇ Save Image to download your AI-generated art.
-
-💻 Code Highlights
-🖼 Smart Auto-Resize (SDXL Required)
-
-SDXL only accepts 9 specific resolutions.
-This tool automatically finds the closest valid dimension:
-
-function getClosestDimension(width, height) {
-    const aspectRatio = width / height;
-    let bestMatch = ALLOWED_DIMENSIONS[0];
-    ...
-}
-
-🔄 Original vs AI Compare Feature
-compareBtn.addEventListener('mousedown', () => {
-    resultImage.src = originalImageURL;
-});
-compareBtn.addEventListener('mouseup', () => {
-    resultImage.src = aiResultURL;
-});
-
-🔥 AI Request (Stable Diffusion XL)
-formData.append('init_image', resizedBlob);
-formData.append('text_prompts[0][text]', finalPrompt);
-formData.append('image_strength', 1 - strength);
-
-🎨 Styling Details
-Color Palette
-Use	Color
-Accent	#ff0055 (Neon Pink)
-Accent Gradient	Pink → Gold
-Background	#0f0c29 dark gradient
-Sidebar	Semi-transparent glass blur
-UI Components:
-
-Glassy neon buttons
-
-Dynamic shadows and glow
-
-Smooth hover effects
-
-Blurred glass sidebar
-
-🔮 Future Enhancements
-
-Background remover + custom scene
-
-Change-gender, old-age, child-face filters
-
-Live camera mode
-
-HD upscale option
-
-Color-grading presets
-
-Face anonymization AI
-
-AI animations / video output (future)
-
-🐛 Known Issues
-
-Very large images take longer to resize
-
-Some styles may alter facial identity too much at high strength
-
-API key must be manually added in script.js (insecure for production)
-
-📝 Learning Outcomes
+## 📝 Learning Outcomes
 
 This project helped practice:
 
-Working with AI Image APIs (Stability AI)
+- Working with AI Image APIs (Stability AI)
 
-Image resizing + canvas manipulation
+- Image resizing + canvas manipulation
 
-Advanced UI/UX design with glassmorphism
+- Advanced UI/UX design with glassmorphism
 
-Handling Blobs, base64 conversion, and async file operations
+- Handling Blobs, base64 conversion, and async file operations
 
-Creating dynamic sliders, filters, prompt builders
+- Creating dynamic sliders, filters, prompt builders
 
-Deep understanding of Image-to-Image AI workflows
+- Deep understanding of Image-to-Image AI workflows
 
-Building a complete web-app with no backend
+- Building a complete web-app with no backend
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Arjeet Kumar
+### Arjeet Kumar
 IIT Patna – BSc CS & Data Analysis
+
 Day 7 – 30 Days 30 Projects Challenge
