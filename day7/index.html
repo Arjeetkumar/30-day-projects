@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceArt AI By Arjeet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>FaceArt <span>AI</span></h1>
+            </div>
+
+            <div class="control-group">
+                <h3>1. Upload</h3>
+                <input type="file" id="uploadInput" accept="image/*">
+                <button class="btn-primary" onclick="document.getElementById('uploadInput').click()">
+                    📸 Choose Photo
+                </button>
+            </div>
+
+            <div class="control-group">
+                <h3>2. AI Settings</h3>
+                
+                <label>Creativity / Strength</label>
+                <input type="range" id="aiStrength" min="10" max="90" value="65">
+                <p class="tiny-text" style="text-align: right; margin-top: -5px;" id="strengthValue">65%</p>
+
+                <div class="filter-grid">
+                    <button onclick="setFilter('toon')">Pixar</button>
+                    <button onclick="setFilter('cyberpunk')">Cyberpunk</button>
+                    <button onclick="setFilter('anime')">Anime</button>
+                    <button onclick="setFilter('sketch')">Sketch</button>
+                    <button onclick="setFilter('zombie')">Zombie</button>
+                    <button onclick="setFilter('clay')">Claymation</button>
+                </div>
+
+                <label style="margin-top: 15px;">Custom Prompt (Optional)</label>
+                <textarea id="customPrompt" rows="2" placeholder="e.g. wearing sunglasses, in space..."></textarea>
+                
+                <button class="btn-generate" onclick="generateAI()">✨ Generate AI Art</button>
+            </div>
+
+            <div class="control-group">
+                <h3>3. Finish</h3>
+                <button class="btn-download" onclick="downloadImage()">⬇ Save Image</button>
+            </div>
+        </aside>
+
+        <!-- MAIN VIEW -->
+        <main class="main-content">
+            <div class="canvas-container" id="canvasContainer">
+                <div id="loading" class="loading-overlay">
+                    <div class="spinner"></div>
+                    <p>Optimizing & Dreaming...</p>
+                </div>
+                
+                <div id="placeholder" class="placeholder-content">
+                    <div class="icon">🎨</div>
+                    <p>Upload a photo to start</p>
+                </div>
+                
+                <img id="resultImage" class="result-img" alt="Result">
+                
+                <button id="compareBtn" class="compare-btn">Hold to Compare</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
