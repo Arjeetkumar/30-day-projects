@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherGlow | Premium Dashboard By Arjeet</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="aurora-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+
+        <!-- HEADER -->
+        <header class="glass-header">
+            <div class="user-welcome">
+                <div class="avatar">A</div>
+                <div class="welcome-text">
+                    <p class="sub">Good Morning,</p>
+                    <h1>Have A Nice Day To You</h1>
+                </div>
+            </div>
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="cityInput" placeholder="Search city..." autocomplete="off">
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT GRID -->
+        <main class="dashboard-grid">
+
+            <!-- LEFT: CURRENT WEATHER -->
+            <section class="current-weather glass-card">
+                <div class="weather-header">
+                    <h2 id="cityName">Loading...</h2>
+                    <span class="badge" id="currentDate">Today</span>
+                </div>
+
+                <div class="weather-main">
+                    <div class="weather-icon-large" id="weatherIcon">
+                        <i data-lucide="cloud-sun"></i>
+                    </div>
+                    <div class="temp-container">
+                        <h1 id="currentTemp">--°</h1>
+                        <p id="weatherDesc">Fetching data...</p>
+                    </div>
+                </div>
+
+                <div class="weather-footer">
+                    <div class="stat-pill">
+                        <i data-lucide="arrow-up"></i> <span id="maxTemp">--°</span>
+                    </div>
+                    <div class="stat-pill">
+                        <i data-lucide="arrow-down"></i> <span id="minTemp">--°</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIGHT: DETAILS & FORECAST -->
+            <div class="details-column">
+
+                <!-- HIGHLIGHTS GRID -->
+                <div class="highlights-grid">
+                    <div class="glass-card highlight-card">
+                        <p class="label">Wind Status</p>
+                        <h3 id="windSpeed">-- <span>km/h</span></h3>
+                        <i data-lucide="wind" class="card-icon"></i>
+                    </div>
+                    <div class="glass-card highlight-card">
+                        <p class="label">Humidity</p>
+                        <h3 id="humidity">-- <span>%</span></h3>
+                        <i data-lucide="droplets" class="card-icon"></i>
+                    </div>
+                    <div class="glass-card highlight-card">
+                        <p class="label">Visibility</p>
+                        <h3 id="visibility">-- <span>km</span></h3>
+                        <i data-lucide="eye" class="card-icon"></i>
+                    </div>
+                    <div class="glass-card highlight-card">
+                        <p class="label">Air Pressure</p>
+                        <h3 id="pressure">-- <span>hPa</span></h3>
+                        <i data-lucide="gauge" class="card-icon"></i>
+                    </div>
+                </div>
+
+                <!-- 5 DAY FORECAST -->
+                <section class="forecast-section glass-card">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast-list" id="forecastList">
+                        <!-- Forecast items injected by JS -->
+                        <div class="forecast-item skeleton"></div>
+                        <div class="forecast-item skeleton"></div>
+                        <div class="forecast-item skeleton"></div>
+                        <div class="forecast-item skeleton"></div>
+                        <div class="forecast-item skeleton"></div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
