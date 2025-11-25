@@ -1120,6 +1120,11 @@ weather-app/
 ├── script.js          # Weather logic + API + forecast
 └── README.md          # Documentation
 
+### 🚀 Getting Started 
+## 📦 Clone the Reposiory
+
+git clone https://github.com/Arjeetkumar/30-day-projects/edit/main/day8
+
 ## 🔮 Future Enhancements
 
 - 🌙 Dark/Light mode automatic switching
@@ -1172,6 +1177,7 @@ weather-app/
 30 Days 30 Projects Challenge
 
 💙 Crafting UI, Logic & Real-World Mini-Apps
+
 
 
 
