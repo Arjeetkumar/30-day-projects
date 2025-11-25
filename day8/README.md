@@ -1,230 +1,145 @@
-🌤️ WeatherGlow – Premium Weather Dashboard
+# 🌤️ WeatherGlow – Premium Weather Dashboard
 
 A modern, futuristic, and beautifully designed glass-UI weather application featuring live weather data, 5-day forecasts, floating aurora animations, and a responsive dashboard layout.
 Built as Day 8 of my 30 Days 30 Projects Challenge.
 
-🖼️ Project Preview
+## 🖼️ Project Preview
+<img width="1583" height="916" alt="Screenshot 2025-11-25 162720" src="https://github.com/user-attachments/assets/c9c14a1f-8d79-451a-88af-a2d67d9b9567" />
 
-(Add this screenshot in your repo)
+### ✨ Features
+## 🎨 Design & UI
 
-👉 You can upload:
-/mnt/data/IMG-20250216-WA0032.jpg
+- Elegant Glassmorphism UI with soft frosted cards
 
-✨ Features
-🎨 Design & UI
+- Animated Aurora / Neon Blobs Background
 
-Elegant Glassmorphism UI with soft frosted cards
+- Responsive 2-column dashboard layout
 
-Animated Aurora / Neon Blobs Background
+- Lucide icons for clean and modern visuals
 
-Responsive 2-column dashboard layout
+- Smooth hover transitions & card animations
 
-Lucide icons for clean and modern visuals
+- Dynamic icons for sunny, rainy, snowy, foggy, and thunder weather
 
-Smooth hover transitions & card animations
+- Auto-adapting forecast cards with gentle motion
 
-Dynamic icons for sunny, rainy, snowy, foggy, and thunder weather
+## 🌦️ Weather Features
+- Current Weather Panel
 
-Auto-adapting forecast cards with gentle motion
+- Live temperature
 
-🌦️ Weather Features
-Current Weather Panel
+- Weather condition (Clear, Rain, Snow, Fog etc.)
 
-Live temperature
+- Dynamic weather icon based on day/night
 
-Weather condition (Clear, Rain, Snow, Fog etc.)
+- High/low temp for today
 
-Dynamic weather icon based on day/night
+- City name & date display
 
-High/low temp for today
+- Weather Details
 
-City name & date display
+- Wind Speed
 
-Weather Details
+- Humidity
 
-Wind Speed
+- Air Pressure
 
-Humidity
+- Visibility estimation
 
-Air Pressure
+- Cloud-cover-based clarity indicator
 
-Visibility estimation
+- Forecast System
 
-Cloud-cover-based clarity indicator
+- 5-Day weather forecast
 
-Forecast System
+- Day-wise temperatures
 
-5-Day weather forecast
+- Independent weather icons
 
-Day-wise temperatures
+- Smooth hover highlight animations
 
-Independent weather icons
+## 🔍 Smart Search System
 
-Smooth hover highlight animations
+- Type a city and press Enter
 
-🔍 Smart Search System
+- Autoloads weather via Open-Meteo Geocoding API
 
-Type a city and press Enter
+- Saves last searched city in localStorage
 
-Autoloads weather via Open-Meteo Geocoding API
+- Loads previous city automatically on startup
 
-Saves last searched city in localStorage
+## ⚙️ Tech Used
 
-Loads previous city automatically on startup
+- HTML5 – UI structure
 
-⚙️ Tech Used
+- CSS3 (Glassmorphism + animations)
 
-HTML5 – UI structure
+- JavaScript (ES6) – logic, API handling
 
-CSS3 (Glassmorphism + animations)
+- Lucide Icons
 
-JavaScript (ES6) – logic, API handling
+- Open-Meteo APIs
 
-Lucide Icons
+- Geocoding API
 
-Open-Meteo APIs
+- Forecast API
 
-Geocoding API
-
-Forecast API
-
-🚀 Getting Started
-Prerequisites
-
-Any modern browser
-
-VS Code / local server (optional)
-
-Run Locally
-git clone https://github.com/<your-username>/<your-repo>.git
-cd your-project-folder
-
-
-Open directly:
-
-index.html
-
-
-Or run local server:
-
-# Python 3
-python -m http.server 8000
-
-📂 Project Structure
+## 📂 Project Structure
 weather-app/
 ├── index.html         # Main UI structure
 ├── style.css          # Glass UI + Aurora effects
 ├── script.js          # Weather logic + API + forecast
-├── assets/
-│   ├── icons/         # Optional custom icons
-│   └── images/        # Banner/screenshot
 └── README.md          # Documentation
 
-🎯 How It Works
-🔹 1. City Search
+## 🔮 Future Enhancements
 
-Enter a city → App fetches coordinates → Loads weather.
+- 🌙 Dark/Light mode automatic switching
 
-🔹 2. Weather API
+- 🌅 Dynamic background based on sunrise/sunset
 
-Uses Open-Meteo to fetch:
+- 📍 Auto-detect location using GPS
 
-Current temperature
+- 📈 Hourly graph with charts.js
 
-Weather codes
+- 🌡️ Temperature unit toggle (°C / °F)
 
-Max/min temps
+- 🔔 Weather alerts notifications
 
-Humidity, wind, pressure, cloud cover
+- 🎨 Custom theme colors
 
-🔹 3. Dynamic Icons
+## 🐛 Known Issues
 
-Weather code → mapped to lucide icon
+- Visibility uses cloud-cover estimation (API limitation)
 
-🔹 4. Forecast
+- Forecast icons always show “day” version
 
-Renders 5-day data dynamically using template injection.
+- Searching extremely rare cities may fail occasionally
 
-🔹 5. UI Animations
+- Open-Meteo API sometimes gives timezone delay
 
-Aurora blobs float infinitely using keyframes.
+## 📝 Learning Outcomes
 
-💻 Code Highlights
-⭐ Smart Weather Icon Mapping
-function getWeatherIcon(code, isDay) {
-    if (code === 0) return isDay ? "sun" : "moon";
-    if ([1,2,3].includes(code)) return isDay ? "cloud-sun" : "cloud-moon";
-    if ([45,48].includes(code)) return "cloud-fog";
-    if ([51,61,63,80].includes(code)) return "cloud-rain";
-    if ([71,73,75,77].includes(code)) return "snowflake";
-    if ([95,96,99].includes(code)) return "cloud-lightning";
-    return "cloud";
-}
+### This project helped me master:
 
-⭐ Dynamic Forecast Rendering
-const item = `
-  <div class="forecast-item">
-    <span class="forecast-day">${dayName}</span>
-    <div class="forecast-icon"><i data-lucide="${icon}"></i></div>
-    <span class="forecast-temp">${max}° <span>${min}°</span></span>
-  </div>
-`;
+- API integration & async workflows
 
-⭐ Aurora Animation
-@keyframes float {
-  0%,100% { transform: scale(1); }
-  33%     { transform: translate(30px, -50px) scale(1.1); }
-  66%     { transform: translate(-20px, 20px) scale(0.9); }
-}
+- Modern dashboard layout with CSS Grid
 
-🔮 Future Enhancements
+- Glassmorphism & neon design aesthetics
 
-🌙 Dark/Light mode automatic switching
+- DOM manipulation at scale
 
-🌅 Dynamic background based on sunrise/sunset
+- Weather code systems (WMO)
 
-📍 Auto-detect location using GPS
+- LocalStorage usage
 
-📈 Hourly graph with charts.js
+- Search-UX design
 
-🌡️ Temperature unit toggle (°C / °F)
+- Animation performance optimization
 
-🔔 Weather alerts notifications
+## 👨‍💻 Author
 
-🎨 Custom theme colors
-
-🐛 Known Issues
-
-Visibility uses cloud-cover estimation (API limitation)
-
-Forecast icons always show “day” version
-
-Searching extremely rare cities may fail occasionally
-
-Open-Meteo API sometimes gives timezone delay
-
-📝 Learning Outcomes
-
-This project helped me master:
-
-API integration & async workflows
-
-Modern dashboard layout with CSS Grid
-
-Glassmorphism & neon design aesthetics
-
-DOM manipulation at scale
-
-Weather code systems (WMO)
-
-LocalStorage usage
-
-Search-UX design
-
-Animation performance optimization
-
-👨‍💻 Author
-
-Arjeet Kumar
+### Arjeet Kumar
 30 Days 30 Projects Challenge
+
 💙 Crafting UI, Logic & Real-World Mini-Apps
