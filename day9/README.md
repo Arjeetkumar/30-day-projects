@@ -1,205 +1,133 @@
-🧩 Sudoku Solver App
+# 🧩 Sudoku Solver App
 
 A clean, interactive Sudoku game with a smart backtracking solver, auto puzzle generator, hints, error detection, and a modern Tkinter UI. Built as Day 9 of the 30 Days 30 Projects challenge.
 
-Sudoku Preview
-(Attach your screenshot here)
+## Sudoku Preview
+<img width="1229" height="969" alt="Screenshot 2025-11-26 162151" src="https://github.com/user-attachments/assets/9f1668cf-2165-4395-8d85-e5c1c10068b0" />
 
-✨ Features
-🎨 Design
 
-Minimal, clean, and modern Tkinter interface
+### ✨ Features
+## 🎨 Design
 
-Highlighted active cell
+- Minimal, clean, and modern Tkinter interface
 
-Colored conflict detection
+- Highlighted active cell
 
-Smooth grid rendering
+- Colored conflict detection
 
-Responsive keyboard interaction
+- Smooth grid rendering
 
-Auto-generated Sudoku boards
+- Responsive keyboard interaction
 
-🔢 Functionality
+- Auto-generated Sudoku boards
 
-Fully playable Sudoku board
+## 🔢 Functionality
 
-Auto-generate new puzzles with adjustable clues
+- Fully playable Sudoku board
 
-Backtracking-based auto-solver
+- Auto-generate new puzzles with adjustable clues
 
-Hint system (fills one correct cell)
+- Backtracking-based auto-solver
 
-Check Board feature
+- Hint system (fills one correct cell)
 
-Delete/Backspace support
+- Check Board feature
 
-Smart input validation (1–9 only)
+- Delete/Backspace support
 
-Highlights invalid entries
+- Smart input validation (1–9 only)
 
-Never overwrites original puzzle clues
+- Highlights invalid entries
 
-⌨️ Keyboard Support
+- Never overwrites original puzzle clues
 
-Numbers (1–9): Fill selected cell
+## ⌨️ Keyboard Support
 
-Arrow Keys: Navigate board
+- Numbers (1–9): Fill selected cell
 
-Backspace/Delete: Clear selected cell
+- Arrow Keys: Navigate board
 
-Enter: Optional "Check Board"
+- Backspace/Delete: Clear selected cell
 
-Mouse click: Select cell
+- Enter: Optional "Check Board"
 
-📱 Implementation
+- Mouse click: Select cell
 
-A lightweight Tkinter-only app — no external libraries needed.
+## 📱 Implementation
+
+- A lightweight Tkinter-only app — no external libraries needed.
 Perfect for learning, experimenting, and extending.
 
-🚀 Getting Started
-Prerequisites
+### git clone https://github.com/Arjeetkumar/30-day-projects/edit/main/day9
 
-Python 3.7+
-
-Tkinter (built into most Python installations)
-
-Installation
-git clone <your-repo-link-here>
-cd sudoku-day9
-python sudoku.py
-
-📂 Project Structure
+## 📂 Project Structure
 day9/
 ├── sudoku.py       # Main Tkinter UI + logic
 ├── README.md       # Documentation
 └── assets/         # (Optional) screenshots
 
-🎯 How to Use
-Play Sudoku
+## 🎨 Styling Details
 
-Click a cell and type numbers 1–9
+- Bold highlight for active cell
 
-Invalid placements are highlighted red
+- Soft background color
 
-Use arrow keys to move around
+- Red conflict colors
 
-Generate Puzzle
+- Blue original clues
 
-Click New Puzzle
+- Dynamic cell border glow on focus
 
-Adjust number of clues (difficulty slider)
+## 🛠️ Technologies Used
 
-Hints
+- Python
 
-Click Hint
+- Tkinter
 
-One correct number appears in an empty cell
+- Backtracking Algorithms
 
-Auto Solve
+- Randomized Puzzle Generation
 
-Click Solve to instantly complete the board
+## 🔮 Future Enhancements
 
-Check the Board
+- Pencil marks (notes mode)
 
-Click Check
+- Undo / Redo
 
-Highlights wrong placements or congratulates if solved
+- Difficulty rating (Easy/Medium/Hard)
 
-Clear
+- Step-by-step solving animation
 
-Clears only user-filled cells
+- Daily challenges
 
-💻 Code Highlights
-✔️ Sudoku Generator (Backtracking)
+- Save/Load puzzles
 
-Creates a valid full Sudoku grid, then removes cells based on difficulty.
+## 🐛 Known Issues
 
-✔️ Solver Algorithm
+- Unique puzzle generation can be slow on extremely low clue settings
 
-Classic DFS backtracking solver:
+- Visualization is instant (no solver animation yet)
 
-def solve(board):
-    r, c = find_empty(board)
-    if not (r, c):
-        return True
-    for num in '123456789':
-        if valid(board, r, c, num):
-            board[r][c] = num
-            if solve(board):
-                return True
-            board[r][c] = '.'
-    return False
-
-✔️ UI Rendering
-
-Canvas-based board with live redraw & highlight effects.
-
-✔️ Hint Function
-
-Injects one number from the solved grid into the playable board.
-
-🎨 Styling Details
-
-Bold highlight for active cell
-
-Soft background color
-
-Red conflict colors
-
-Blue original clues
-
-Dynamic cell border glow on focus
-
-🛠️ Technologies Used
-
-Python
-
-Tkinter
-
-Backtracking Algorithms
-
-Randomized Puzzle Generation
-
-🔮 Future Enhancements
-
-Pencil marks (notes mode)
-
-Undo / Redo
-
-Difficulty rating (Easy/Medium/Hard)
-
-Step-by-step solving animation
-
-Daily challenges
-
-Save/Load puzzles
-
-🐛 Known Issues
-
-Unique puzzle generation can be slow on extremely low clue settings
-
-Visualization is instant (no solver animation yet)
-
-📝 Learning Outcomes
+## 📝 Learning Outcomes
 
 This project helped me practice:
 
-Backtracking algorithms
+- Backtracking algorithms
 
-Grid-based UI design
+- Grid-based UI design
 
-Event-driven programming in Tkinter
+- Event-driven programming in Tkinter
 
-State management in Python
+- State management in Python
 
-Puzzle generation logic
+- Puzzle generation logic
 
-Clean code structure
+- Clean code structure
 
-Error highlighting & validation
+- Error highlighting & validation
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Arjeet Kumar
+### Arjeet Kumar
+
 Day 9 — 30 Days 30 Projects Challenge
