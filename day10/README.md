@@ -1,91 +1,92 @@
-📊 Algorithm Visualizer
+# 📊 Algorithm Visualizer
 
 A real-time, interactive BFS, DFS & A visualization tool*
 Day 10 of my 30 Days — 30 Projects Challenge
 
+## Preview
 
-(Use your image: /mnt/data/IMG-20250216-WA0032.jpg — upload it to your repo as preview.png)
+<img width="1131" height="914" alt="Screenshot 2025-11-27 163820" src="https://github.com/user-attachments/assets/b6551dce-63b8-49ba-a033-ef4eac6c7dc0" />
 
-✨ Overview
+## ✨ Overview
 
 Algorithm Visualizer is a beautifully designed, interactive Python application that helps users see how algorithms think.
 It brings classic pathfinding algorithms like BFS, DFS, and A* to life — one step at a time — through smooth animations, a clean UI, and structured grid-based visualization.
 
 This project was built entirely using Python, Pygame, and modular architecture, making it easy to extend with new algorithms or UI features.
 
-🌟 Features
-🎨 UI & Visualization
+### 🌟 Features
+## 🎨 UI & Visualization
 
-Modern dark-glass theme
+- Modern dark-glass theme
 
-Clean grid layout & node animation
+- Clean grid layout & node animation
 
-Highlighted states:
+- Highlighted states:
 
-🔵 Frontier nodes
+## 🔵 Frontier nodes
 
-🟦 Visited nodes
+- 🟦 Visited nodes
 
-🟩 Final path
+- 🟩 Final path
 
-Interactive buttons:
+## Interactive buttons:
 
-▶ BFS
+- ▶ BFS
 
-▶ DFS
+- ▶ DFS
 
-▶ A*
+- ▶ A*
 
-🔄 Reset maze
+## 🔄 Reset maze
 
-🧠 Algorithms Included
-1️⃣ Breadth-First Search (BFS)
+- 🧠 Algorithms Included
+### 1️⃣ Breadth-First Search (BFS)
 
-Layer-by-layer exploration
+- Layer-by-layer exploration
 
-Guarantees shortest path (unweighted)
+- Guarantees shortest path (unweighted)
 
-Smooth frontier visualization
+- Smooth frontier visualization
 
-2️⃣ Depth-First Search (DFS)
+### 2️⃣ Depth-First Search (DFS)
 
-Deep traversal
+- Deep traversal
 
-Explores one branch fully before backtracking
+- Explores one branch fully before backtracking
 
-Great for maze-like structures
+- Great for maze-like structures
 
-3️⃣ A* Search
+### 3️⃣ A* Search
 
-Smart, heuristic-driven search
+- Smart, heuristic-driven search
 
-Uses Manhattan Distance
+- Uses Manhattan Distance
 
-Fast and optimal for grid pathfinding
+- Fast and optimal for grid pathfinding
 
-⚙️ Tech Used
+## ⚙️ Tech Used
 
-Python
+- Python
 
-Pygame
+- Pygame
 
-BFS / DFS / A* algorithms
+- BFS / DFS / A* algorithms
 
-Modular architecture (clean & scalable):
+- Modular architecture (clean & scalable):
 
-algorithms.py – All algorithms as generators
+- algorithms.py – All algorithms as generators
 
-maze.py – Maze creation & wall generation
+- maze.py – Maze creation & wall generation
 
-visualizer.py – Rendering & UI
+- visualizer.py – Rendering & UI
 
-main.py – Control loop
+- main.py – Control loop
 
-ui_components.py – Buttons & UI helpers
+- ui_components.py – Buttons & UI helpers
 
-constants.py – Config & theme
+- constants.py – Config & theme
 
-📁 Project Structure
+## 📁 Project Structure
 Algorithm-Visualizer/
 │── main.py               # Main event loop + execution
 │── algorithms.py         # BFS, DFS, A* (step-by-step generators)
@@ -97,93 +98,53 @@ Algorithm-Visualizer/
 │   └── preview.png       # (use IMG-20250216-WA0032.jpg)
 │── README.md             # Documentation
 
-🚀 How It Works
-🟦 1. Maze Generation
+## 🎯 Controls
+- Action	Key / Button
+- Run BFS	BFS Button
+- Run DFS	DFS Button
+- Run A*	A* Button
+- Reset Maze	Reset Button
+- Pause / Resume	SPACE
+- Regenerate Maze	R Key
+## 🧩 Learning Outcomes
 
-Choose between:
+### This project strengthened my understanding of:
 
-Random walls
+- Algorithmic thinking
 
-Recursive Backtracking Maze
+- BFS, DFS, and A* implementation
 
-🔄 2. Visual Execution
+- State visualization
 
-Each algorithm yields events like:
+- Pygame event loop
 
-{'type': 'visit', 'pos': (r, c)}
-{'type': 'frontier', 'pos': (r, c)}
-{'type': 'path', 'pos': (r, c)}
-{'type': 'done', 'found': True}
+- UI/UX for algorithm animations
 
+- Modular programming
 
-The visualizer interprets these to color the cells step-by-step.
+- Using generators for smooth animations
 
-🎥 3. Animation
+- Designing extensible software
 
-Frame-by-frame animation using:
+## 🔮 Future Enhancements
 
-pygame.time.get_ticks()
-STEP_DELAY_MS
+- Add Dijkstra’s Algorithm
 
-🧪 How to Run
-Prerequisites
+- Weighted grids
 
-Python 3.x
+- Diagonal movement
 
-Pygame library
+- Speed slider
 
-Install Dependencies
-pip install pygame
+- Manual grid editing (click to add/remove walls)
 
-Run the App
-python main.py
+- Click-to-select start & end nodes
 
-🎯 Controls
-Action	Key / Button
-Run BFS	BFS Button
-Run DFS	DFS Button
-Run A*	A* Button
-Reset Maze	Reset Button
-Pause / Resume	SPACE
-Regenerate Maze	R Key
-🧩 Learning Outcomes
+- Export animation as GIF
 
-This project strengthened my understanding of:
+## 🧑‍💻 Author
 
-Algorithmic thinking
-
-BFS, DFS, and A* implementation
-
-State visualization
-
-Pygame event loop
-
-UI/UX for algorithm animations
-
-Modular programming
-
-Using generators for smooth animations
-
-Designing extensible software
-
-🔮 Future Enhancements
-
-Add Dijkstra’s Algorithm
-
-Weighted grids
-
-Diagonal movement
-
-Speed slider
-
-Manual grid editing (click to add/remove walls)
-
-Click-to-select start & end nodes
-
-Export animation as GIF
-
-🧑‍💻 Author
-
-Arjeet Kumar
+### Arjeet Kumar
 BSc CS & Data Analysis, IIT Patna
+
 AI • Development • Data Science
